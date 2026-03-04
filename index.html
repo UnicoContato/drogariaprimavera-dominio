@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drogaria Primavera | Saúde e Bem-estar em Goiânia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 font-['Outfit'] overflow-x-hidden">
+
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-red-100 blur-[120px] opacity-50"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-blue-100 blur-[120px] opacity-50"></div>
+    </div>
+
+    <header id="main-header" class="fixed w-full z-50 transition-all duration-300 transform translate-y-0">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="glass-effect rounded-2xl px-6 py-3 flex justify-between items-center border border-white/20 shadow-lg">
+                <a href="#" class="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+                    DROGARIA PRIMAVERA
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-slate-700 hover:text-red-600 transition">Início</a>
+                    <a href="#sobre" class="text-slate-700 hover:text-red-600 transition">Sobre</a>
+                    <a href="#servicos" class="text-slate-700 hover:text-red-600 transition">Serviços</a>
+                    <a href="#galeria" class="text-slate-700 hover:text-red-600 transition">Galeria</a>
+                    <a href="#contato" class="text-slate-700 hover:text-red-600 transition">Contato</a>
+                    <a href="https://wa.me/556232320121" target="_blank" class="bg-red-600 text-white px-5 py-2 rounded-xl hover:bg-red-700 transition shadow-lg shadow-red-200">
+                        WhatsApp
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full px-6 py-4">
+            <div class="glass-effect rounded-2xl p-6 flex flex-col space-y-4 shadow-xl border border-white/20">
+                <a href="#inicio" class="mobile-link text-lg text-slate-700">Início</a>
+                <a href="#sobre" class="mobile-link text-lg text-slate-700">Sobre</a>
+                <a href="#servicos" class="mobile-link text-lg text-slate-700">Serviços</a>
+                <a href="#galeria" class="mobile-link text-lg text-slate-700">Galeria</a>
+                <a href="#contato" class="mobile-link text-lg text-slate-700">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="hero-zoom w-full h-full bg-cover bg-center" style="background-image: url('img/1.jpeg');"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-slate-50"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-6 text-center reveal">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
+                Sua saúde em <span class="text-red-500">primeiro</span> lugar.
+            </h1>
+            <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
+                Tradição e cuidado farmacêutico no coração de Goiânia. Medicamentos, dermocosméticos e atendimento 24h para você.
+            </p>
+            <a href="#servicos" class="btn-shine bg-red-600 text-white text-lg font-semibold px-10 py-4 rounded-2xl shadow-2xl transition-all inline-block">
+                Nossos Serviços
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+                <h2 class="text-4xl font-bold text-slate-800 mb-6">Tradição que gera confiança</h2>
+                <p class="text-slate-600 text-lg mb-6 leading-relaxed">
+                    Fundada em 1978, em Goiânia, a Drogaria Primavera construiu sua trajetória com base na confiança, no cuidado e no compromisso com a saúde da comunidade. Ao longo desses anos, tornou-se referência em atendimento humanizado, qualidade e respeito aos seus clientes.
+                </p>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Com uma equipe 24h por dia dedicada e preparada para orientar com responsabilidade, a Drogaria Primavera oferece medicamentos, produtos de higiene e cuidados pessoais com procedência garantida e preços justos. Mais do que uma drogaria, é um espaço de acolhimento e proximidade para cada geração.
+                </p>
+            </div>
+            <div class="reveal relative">
+                <div class="absolute -inset-4 bg-red-500/10 rounded-[2rem] blur-2xl"></div>
+                <img src="img/2.jpeg" alt="Interior Drogaria Primavera" class="relative rounded-[2rem] shadow-2xl border-4 border-white object-cover h-[450px] w-full">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-slate-100/50">
+        <div class="container mx-auto px-6 text-center mb-16 reveal">
+            <h2 class="text-4xl font-bold text-slate-800">Cuidado Completo</h2>
+            <p class="text-slate-500 mt-4 text-lg">Soluções farmacêuticas pensadas para sua rotina.</p>
+        </div>
+        
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-3xl border border-white/40 shadow-xl reveal">
+                <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.673.337a4 4 0 01-2.586.346l-1.1-.22a2 2 0 00-2.264 1.258l-.634 1.585a2 2 0 00.35 2.24l1.415 1.414a2 2 0 002.828 0l3.182-3.182a2 2 0 00.517-1.022l.477-2.387z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 00-1 1v.5a1.5 1.5 0 01-3 0V20a1 1 0 00-1-1H6a1 1 0 01-1-1v-3a1 1 0 011-1h.5a1.5 1.5 0 000-3H6a1 1 0 01-1-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Farmácia Clínica</h3>
+                <p class="text-slate-600 leading-relaxed">Atendimento farmacêutico especializado com aferição de pressão, glicemia e aplicação de injetáveis com segurança.</p>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-white/40 shadow-xl reveal">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Dermocosméticos</h3>
+                <p class="text-slate-600 leading-relaxed">As melhores marcas para o cuidado com sua pele e cabelos, com orientação personalizada de especialistas.</p>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-white/40 shadow-xl reveal">
+                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Entrega Rápida</h3>
+                <p class="text-slate-600 leading-relaxed">Serviço de delivery eficiente em toda Goiânia. Receba seus medicamentos no conforto de sua casa com agilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-slate-800 text-center mb-16 reveal">Nossa Estrutura</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal">
+            <img src="img/3.jpeg" class="w-full h-64 object-cover rounded-3xl shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+            <img src="img/4.jpeg" class="w-full h-64 object-cover rounded-3xl shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+            <img src="img/5.jpeg" class="w-full h-64 object-cover rounded-3xl shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+            <img src="img/6.jpeg" class="w-full h-64 object-cover rounded-3xl shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 reveal">
+            <div>
+                <h2 class="text-4xl font-bold text-slate-800 mb-8">Onde nos encontrar</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-red-600 mt-1">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-700">Endereço</p>
+                            <p class="text-slate-600">Av. Anhanguera, 2479, Quadra A-1 Lote 12</p>
+                            <p class="text-slate-600">Setor Leste Universitário, Goiânia - GO, 74.610-010</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="text-red-600">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-700">Telefone / WhatsApp</p>
+                            <p class="text-slate-600">(62) 3232-0121</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100">
+                        <p class="text-sm font-semibold text-slate-400">RAZÃO SOCIAL</p>
+                        <p class="text-slate-600 font-medium uppercase">PRIMAVERA COMERCIAL DE MEDICAMENTOS LTDA</p>
+                        <p class="text-sm text-slate-400 mt-2">CNPJ: 12.222.431/0001-81</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-2xl h-[400px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.610488686522!2d-49.2393226!3d-16.6713197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef33f86e92b0f%3A0x6a0c0e86f8c7d6c!2sAv.%20Anhanguera%2C%202479%20-%20Setor%20Leste%20Universit%C3%A1rio%2C%20Goi%C3%A2nia%20-%20GO%2C%2074610-010!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">© 2026 Primavera Comercial de Medicamentos Ltda - Todos os direitos reservados.</p>
+            <button id="privacy-btn" class="text-slate-400 hover:text-white transition underline underline-offset-4">
+                Política de Privacidade
+            </button>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/556232320121" target="_blank" class="fixed bottom-8 right-8 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl animate-pulse hover:scale-110 transition">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.767 5.77 0 1.264.408 2.43 1.096 3.38l-.713 2.603 2.66-.698a5.733 5.733 0 002.724.685c3.181 0 5.767-2.586 5.767-5.77 0-3.181-2.586-5.77-5.767-5.77zm3.42 8.163c-.147.414-.727.755-1.008.803-.27.046-.532.062-.892-.055-.224-.073-.518-.184-.875-.333-1.522-.633-2.505-2.176-2.58-2.276-.076-.1-.617-.822-.617-1.569s.391-1.115.53-1.262c.139-.147.304-.184.405-.184s.202 0 .289.005c.092.005.216-.035.336.252.124.301.427 1.042.464 1.117.037.076.06.163.01.263-.05.1-.073.161-.147.248-.073.087-.154.195-.22.253-.073.064-.15.133-.064.28.087.147.387.64.831 1.034.57.507 1.049.664 1.206.741.156.076.248.064.34-.041.092-.106.395-.461.5-.618.106-.157.212-.132.358-.078.147.054.929.438 1.087.518s.262.12.301.187c.039.067.039.39-.108.804z"/></svg>
+    </a>
+
+    <div id="modal" class="fixed inset-0 z-[60] hidden flex items-center justify-center p-6 backdrop-blur-md bg-black/20">
+        <div class="glass-effect max-w-2xl w-full p-8 rounded-3xl border border-white/40 shadow-2xl relative animate-in fade-in zoom-in duration-300">
+            <button id="close-modal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 transition text-2xl">×</button>
+            <h3 class="text-2xl font-bold mb-6 text-slate-800">Política de Privacidade</h3>
+            <div class="max-h-[60vh] overflow-y-auto text-slate-600 space-y-4">
+                <p>Nesta Drogaria Primavera, valorizamos a privacidade dos nossos clientes. Esta política descreve como tratamos suas informações conforme a LGPD.</p>
+                <p><strong>Coleta de Dados:</strong> Coletamos apenas informações essenciais para a prestação de serviços farmacêuticos e atendimento via WhatsApp.</p>
+                <p><strong>Uso:</strong> Seus dados são utilizados estritamente para fins de atendimento, faturamento e cumprimento de normas da ANVISA.</p>
+                <p><strong>Segurança:</strong> Aplicamos medidas técnicas para proteger seus dados contra acessos não autorizados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
